@@ -12,10 +12,10 @@ struct project_ptsApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+				ContentView()
             }
         }
-
-        WKNotificationScene(controller: NotificationController.self, category: "myCategory")
+		
+//        WKNotificationScene(controller: NotificationController.self, category: "myCategory")
     }
 }

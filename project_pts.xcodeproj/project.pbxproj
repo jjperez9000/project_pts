@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		495BCCE627B0963500416D9A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495BCCE527B0963500416D9A /* GameView.swift */; };
 		49729FEA277B830200C90C99 /* project_pts WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 49729FE9277B830200C90C99 /* project_pts WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		49729FEF277B830300C90C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49729FEE277B830300C90C99 /* Assets.xcassets */; };
 		49729FF5277B830300C90C99 /* project_pts WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 49729FF4277B830300C90C99 /* project_pts WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -79,11 +80,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		495BCCE527B0963500416D9A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		49729FE5277B830200C90C99 /* project_pts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project_pts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49729FE9277B830200C90C99 /* project_pts WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project_pts WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49729FEE277B830300C90C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49729FF4277B830300C90C99 /* project_pts WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "project_pts WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		49729FF9277B830300C90C99 /* project_ptsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_ptsApp.swift; sourceTree = "<group>"; };
+		49729FF9277B830300C90C99 /* project_ptsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_ptsApp.swift; sourceTree = "<group>"; usesTabs = 1; };
 		49729FFB277B830300C90C99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49729FFD277B830300C90C99 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		49729FFF277B830300C90C99 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				49729FF9277B830300C90C99 /* project_ptsApp.swift */,
 				49729FFB277B830300C90C99 /* ContentView.swift */,
+				495BCCE527B0963500416D9A /* GameView.swift */,
 				49729FFD277B830300C90C99 /* NotificationController.swift */,
 				49729FFF277B830300C90C99 /* NotificationView.swift */,
 				4972A001277B830300C90C99 /* ComplicationController.swift */,
@@ -388,6 +391,7 @@
 				4972A002277B830300C90C99 /* ComplicationController.swift in Sources */,
 				49729FFA277B830300C90C99 /* project_ptsApp.swift in Sources */,
 				4972A000277B830300C90C99 /* NotificationView.swift in Sources */,
+				495BCCE627B0963500416D9A /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
