@@ -13,6 +13,7 @@ struct ContentView: View {
     @State var inGame: Bool = false
     @State var scoreLimit: Int = 11
     @State var servingFirst: Bool = true
+    // store the current match score
     @AppStorage("redWins") var redWins: Int = 0
     @AppStorage("blueWins") var blueWins: Int = 0
     

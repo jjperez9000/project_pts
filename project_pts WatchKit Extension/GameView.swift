@@ -16,6 +16,7 @@ struct GameView: View {
     @State var bluePoints: Int = 0
     @State var firstServe: Bool = false
     
+    // function to increment score and swap the server when needed
     func update_score(blueWin: Bool) -> () {
         if (redPoints == 0 && bluePoints == 0) {
             firstServe = serving
@@ -44,6 +45,7 @@ struct GameView: View {
         }
     }
     
+    // increment wins
     func update_wins(blueWin: Bool) -> () {
         if (blueWin) {
             blueWins += 1
@@ -52,6 +54,7 @@ struct GameView: View {
         }
     }
     
+    //resets game scores
     func reset_score() -> () {
         redPoints = 0
         bluePoints = 0
@@ -59,6 +62,7 @@ struct GameView: View {
     }
     
     var body: some View {
+        //3 options, blue win screen, red win screen, game going on 
         if (redPoints >= scoreLimit && redPoints-2 >= bluePoints) {
             VStack() {
                 Text("You lost :(")
