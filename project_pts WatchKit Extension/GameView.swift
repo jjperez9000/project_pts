@@ -20,6 +20,7 @@ struct GameView: View {
         if (redPoints == 0 && bluePoints == 0) {
             firstServe = serving
         }
+        
         if (blueWin) {
             bluePoints += 1
         } else {
@@ -42,6 +43,7 @@ struct GameView: View {
             update_wins(blueWin: true)
         }
     }
+    
     func update_wins(blueWin: Bool) -> () {
         if (blueWin) {
             blueWins += 1
@@ -49,11 +51,13 @@ struct GameView: View {
             redWins += 1
         }
     }
+    
     func reset_score() -> () {
         redPoints = 0
         bluePoints = 0
         serving = !firstServe
     }
+    
     var body: some View {
         if (redPoints >= scoreLimit && redPoints-2 >= bluePoints) {
             VStack() {

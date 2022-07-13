@@ -15,15 +15,7 @@ struct ContentView: View {
     @State var servingFirst: Bool = true
     @AppStorage("redWins") var redWins: Int = 0
     @AppStorage("blueWins") var blueWins: Int = 0
-//    init() {
-//        if let data = UserDefaults.standard.data(forKey: "lmao") {
-//
-//        }
-//    }
     
-    func swap_screen() {
-        inGame = !inGame
-    }
     func reset_match() {
         blueWins = 0
         redWins = 0
@@ -64,11 +56,13 @@ struct ContentView: View {
                         scoreLimit: $scoreLimit,
                         serving: $servingFirst,
                         blueWins: $blueWins,
-                        redWins: $redWins)).padding(.vertical, 5.0)
+                        redWins: $redWins))
+                        .padding(.vertical, 5.0)
                     Text("current match: " + String(blueWins) + "-" + String(redWins) )
                     Button(action: {reset_match()}, label: {Text("reset match")})
                 }
-            }.navigationBarTitle("ScoreKeeper")
+            }
+                .navigationBarTitle("ScoreKeeper")
         }
         
     }
